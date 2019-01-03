@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aquidejouer"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        />
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/de"
+        android:layout_below="@id/aquidejouer"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jouer des"
+        android:layout_toEndOf="@id/de"
+        android:layout_toRightOf="@id/de"
+        android:layout_alignBottom="@id/de"
+        android:id="@+id/jouerdes"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/jouerdes"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Construire Colonie/ville"
+            android:id="@+id/construire"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Construire route"
+            android:id="@+id/construireroute"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Echange"
+            android:id="@+id/echanger"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CarteDeveloppement"
+            android:id="@+id/cardedev"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fin du Tour"
+            android:id="@+id/findutour"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

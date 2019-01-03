@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomjoueur"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/ajouter"
+        android:layout_alignRight="@id/ajouter"
+        android:hint="nomjoueur"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ajouter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="+"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/ajouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv">
+
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textension"
+        android:layout_above="@id/go"
+        android:text="extension:"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/extension"
+        android:layout_toEndOf="@id/textension"
+        android:layout_toRightOf="@id/textension"
+        android:layout_above="@id/go"/>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/go"
+        android:text="init terrain"/>
+
+</RelativeLayout>
