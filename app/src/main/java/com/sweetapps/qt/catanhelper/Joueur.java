@@ -2,6 +2,9 @@ package com.sweetapps.qt.catanhelper;
 
 import java.io.Serializable;
 
+
+// Initialisation ressource
+// JUJ JJ/MM/AA
 public class Joueur implements Serializable {
     static final long serialVersionUID = 12345678L;
     String nom;
